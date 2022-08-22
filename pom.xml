@@ -45,13 +45,12 @@
                         </goals>
                     </execution>
                     <execution>
-                        <id>report</id>
+                        <id>report-unicalniy69</id>
                         <phase>verify</phase>
                         <goals>
                             <goal>report</goal>
                         </goals>
                     </execution>
-
                     <execution>
                         <id>check</id>
                         <goals>
@@ -60,11 +59,12 @@
                         <configuration>
                             <rules>
                                 <rule>
+                                    <element>BUNDLE</element>
                                     <limits>
                                         <limit>
-                                            <counter>LINE</counter>
+                                            <counter>INSTRUCTION</counter>
                                             <value>COVEREDRATIO</value>
-                                            <minimum>100%</minimum>
+                                            <minimum>1.0</minimum>
                                         </limit>
                                     </limits>
                                 </rule>
